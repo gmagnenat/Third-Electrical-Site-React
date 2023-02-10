@@ -1,10 +1,33 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from './components/Home';
+import SubPage from './components/SubPage';
+import Contact from './components/Contact'
+import { subPages } from './resources/data';
 import './index.css'
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home  />,
+  },
+  {
+    path: "/subPage/:subPageId",
+    element: <SubPage  />,
+    loader: ({params}) => {
+      return subPages[params.subPageId]
+    }
+  },
+  {
+    path: "/contact",
+  element: <Contact  />
+},
+]);
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
