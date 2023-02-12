@@ -14,7 +14,7 @@ const MobileNav = () => {
             <div style={dropdownActive ? {...dropBtnStyles.barThree, ...dropBtnStyles.bars, ...dropBtnStyles.barThreeX} : {...dropBtnStyles.barThree, ...dropBtnStyles.bars}}/>
             <div style={dropdownActive ? {...dropBtnStyles.dropContent, ...dropBtnStyles.dropContentShow} : {...dropBtnStyles.dropContent}} >
             {navOptions.map((o, i) => (
-                        <Link style={dropBtnStyles.dropItem} to={o.href}>{o.title}</Link>
+                        <Link key={i} style={dropBtnStyles.dropItem} to={o.href}>{o.title}</Link>
                 ))}
             </div>
         </div>

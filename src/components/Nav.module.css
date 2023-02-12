@@ -1,0 +1,70 @@
+
+.drop-btn {
+    background-color: var(--main-color);
+      color: var(--text-color-light);
+      cursor: pointer;
+      padding-top: 0.5rem;
+      font-size: 1.25rem;
+      list-style-type: none;
+      position: sticky;
+      width: 100%;
+      height: 48px;
+      top: -1px;
+      z-index: 5;
+    }
+  
+  
+  
+    .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: var(--accent-color);
+      margin: 6px auto;
+      pointer-events: none;
+      
+    }
+    
+    .bar1, .bar3 {
+      transition: 0.5s;
+    }
+  
+    .bar2 {
+      transition: 0.3s;
+    }
+  
+    .change .bar1 {
+      transform: translate(0, 11px) rotate(-45deg);
+    }
+    
+    .change .bar2 {
+      opacity: 0;
+    }
+    
+    .change .bar3 {
+      transform: translate(0, -11px) rotate(45deg);
+    }
+  
+    .dropdown-content {
+      transform: translateY(0.7rem);
+      transform: scaleY(0);
+      transform-origin: top center;
+      transition-duration: 0.5s;
+      position: absolute;
+      background-color: var(--dropdown-color);
+      width: 100%;
+      z-index: 1;
+      text-align: center;
+    }
+  
+    .show  {
+      transform: scaleY(1);
+      transform-origin: top center;
+    }
+    
+    .dropdown-content a {
+      color: var(--text-color-light);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      border-bottom: 1px solid #000;
+    }

@@ -9,19 +9,10 @@ const Nav = () => {
 
   return (
     <div>
-        <div>
-            <h1>Call us! 250-555-5555</h1>
+        <div className='flex items-center' >
+            <h1 className='text-2xl p-2 bg-accent text-text-light w-screen text-center' >Call us! 250-555-5555</h1>
         </div>
         {width > 976 ? <DesktopNav  /> : <MobileNav  />}
-        <div>
-                
-                {/* <img src='../resources/imgs/bolt.svg' /> */}
-                {/* {navOptions.map((o, i) => (
-                    <li key={i} >
-                        <Link to={o.href}>{o.title}</Link>
-                    </li>
-                ))} */}
-        </div>
     </div>
   )
 }

@@ -6,7 +6,8 @@ module.exports = {
   ],
     theme: {
       screens: {
-        sm: '480px',
+        xsm: '480px',
+        sm: '550px',
         md: '768px',
         lg: '976px',
         xl: '1440px',
@@ -24,6 +25,9 @@ module.exports = {
           'footer-bg': '#242D37',
           'footer-text': 'grey',
         },
+        height: {
+          'screen-width': '100vw'
+        }
     },
 },
   plugins: [],

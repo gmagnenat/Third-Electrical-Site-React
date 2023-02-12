@@ -10,7 +10,7 @@ export const dropBtnStyles = {
         width: "100%",
         height: "48px",
         top: "-1px",
-        zIndex: "5",
+        zIndex: "50",
     },
     bars: {
         width: "35px",
