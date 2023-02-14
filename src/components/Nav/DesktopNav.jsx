@@ -14,7 +14,7 @@ const DesktopNav = () => {
             alt="company-logo"/>
         </Link>
         {navOptions.map((o, i) => (
-                    <Link className='h-full flex items-center px-6 duration-500 hover:bg-menu hover:text-text-light active:bg-menu active:text-text-light active:duration-0' to={o.href}>
+                    <Link key={i} className='h-full flex items-center px-6 duration-500 hover:bg-menu hover:text-text-light active:bg-menu active:text-text-light active:duration-0' to={o.href}>
                         <p>{o.title}</p>
                     </Link>
                 ))}
