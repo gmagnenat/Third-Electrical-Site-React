@@ -10,6 +10,7 @@ const AboutUs = () => {
     min-[1200]:bg-[url(./resources/imgs/Office-Interior-1800.webp)]
     bg-cover'>
       <div className='bg-[#0002] h-full w-full z-10'>
+        {/* Upper wedge */}
           <svg className='text-main inline z-30 h-[30vw] w-full max-h-[150px]' xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
               <path fill="currentColor" d="M0 0 L100 0 L100 2 L0 100 Z"></path>
           </svg>
@@ -30,6 +31,8 @@ const AboutUs = () => {
                 </div>
               ))}
           </div>
+
+          {/* Lower wedge */}
           <svg className='text-main inline z-30 h-[30vw] max-h-[150px] w-full mt-16' xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
               <g transform="translate(0,-952.36218)">
                   <path fill="currentColor" d="m 0,1052.3622 100,0 0,-2 L 0,952.36218 z"></path>

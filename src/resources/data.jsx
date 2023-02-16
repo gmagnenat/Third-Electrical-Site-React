@@ -99,3 +99,23 @@ export const aboutUs = [
         text: "Panel Replacements"
     },
 ]
+
+
+export const reviews = [
+    {
+    text: "I have an older condo, and needed some breakers and wires replaced, but two other electricians said the walls and floor aren't concrete so it couldn't be done.  But Mike is great, and he did the job well.  Professional, reliable, great value, and not afraid to do a more difficult task.",
+    name: "Sean Dayton",
+    },
+    {
+    text: "Sean and team completely re-did the electrical in our apartment complex before upgrading us to a 400 amp service. The care, time, and expertise that Fake Electric brought to the jobsite was something that I have never seen before. Thanks to the Fake Electric for being true electrical professionals.",
+    name: "Mike Smith",
+    },
+    {
+    text: "The people at Fake Electric are capable of commercial and residential projects with a sharp focus on quality. Clean work and careful attention, along with a respectful and knowledgeable crew is what keeps us calling them back.",
+    name: "Pedro Gonzales",
+    },
+    {
+    text: "Fake Electrical team were superb, and I would highly recommend this company!",
+    name: "Sean Peters",
+    },
+]
