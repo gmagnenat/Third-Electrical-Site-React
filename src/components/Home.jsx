@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import AboutUs from './AboutUs'
 import Footer from './Footer'
 import Header from './Header'
@@ -15,7 +14,7 @@ const Home = () => {
         <WhatWeDo  />
         <AboutUs  />
         <Reviews  />
-        {/* <Footer  /> */}
+        <Footer  />
     </>
   )
 }

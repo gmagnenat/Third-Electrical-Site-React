@@ -5,9 +5,9 @@ const AboutUs = () => {
   return (
     <div className='
     bg-[url(./resources/imgs/Office-Interior-600.webp)] 
-    min-[600]:bg-[url(./resources/imgs/Office-Interior-900.webp)]
-    min-[900]:bg-[url(./resources/imgs/Office-Interior-1200.webp)]
-    min-[1200]:bg-[url(./resources/imgs/Office-Interior-1800.webp)]
+    md:bg-[url(./resources/imgs/Office-Interior-900.webp)]
+    lg:bg-[url(./resources/imgs/Office-Interior-1200.webp)]
+    xl:bg-[url(./resources/imgs/Office-Interior-1680.webp)]
     bg-cover'>
       <div className='bg-[#0002] h-full w-full z-10'>
         {/* Upper wedge */}
@@ -18,7 +18,7 @@ const AboutUs = () => {
           <div className='bg-white w-1/4 h-px m-auto mb-5' />
           <div className='flex flex-col justify-center md:flex-row gap-y-4' >
               {aboutUs.map((a, i) => (
-                <div className='
+                <div key={i} className='
                 z-20 border border-accent text-text-light bg-[#0002]
                 flex flex-col justify-center text-center gap-y-4
                 my-[2px] mx-auto p-3 w-11/12 max-w-[200px]
